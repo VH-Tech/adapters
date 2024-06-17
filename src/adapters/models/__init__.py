@@ -25,6 +25,7 @@ from .t5.mixin_t5 import (
     T5ModelAdaptersMixin,
 )
 from .vit.mixin_vit import ViTIntermediateAdaptersMixin, ViTModelAdaptersMixin
+from .swin.mixin_swin import SwinModelAdaptersMixin, SwinLayerAdaptersMixin
 from .xmod.mixin_xmod import XmodModelAdaptersMixin
 
 
@@ -72,6 +73,7 @@ MODEL_MIXIN_MAPPING = {
     "T5EncoderModel": T5ModelAdaptersMixin,
     "ViTIntermediate": ViTIntermediateAdaptersMixin,
     "ViTModel": ViTModelAdaptersMixin,
+    "SwinModel" :  SwinModelAdaptersMixin,
     "XLMRobertaLayer": BertLayerAdaptersMixin,
     "XLMRobertaModel": BertModelAdaptersMixin,
     "XmodLayer": BertLayerAdaptersMixin,
